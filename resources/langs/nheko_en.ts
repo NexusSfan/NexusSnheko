@@ -261,7 +261,7 @@
     <message>
         <location line="+102"/>
         <source>The cache on your disk is newer than this version of Nheko supports. Please update Nheko or clear your cache.</source>
-        <translation>The cache on your disk is newer than this version of Nheko supports. Please update Nheko or clear your cache.</translation>
+        <translation>The cache on your disk is newer than this version of NexusSnheko supports. Please update NexusSnheko or clear your cache.</translation>
     </message>
     <message>
         <location line="+41"/>
@@ -366,7 +366,7 @@ If you think this is a mistake, you can close Nheko instead to possibly recover 
     <message>
         <location line="+88"/>
         <source>Migrating the cache to the current version failed. This can have different reasons. Please open an issue at https://github.com/Nheko-Reborn/nheko and try to use an older version in the meantime. Alternatively you can try deleting the cache manually.</source>
-        <translation>Migrating the cache to the current version failed. This can have different reasons. Please open an issue at https://github.com/Nheko-Reborn/nheko and try to use an older version in the meantime. Alternatively you can try deleting the cache manually.</translation>
+        <translation>Migrating the cache to the current version failed. This can have different reasons. Please open an issue at http://github.com/NexusSfan/NexusSnheko and try to use an older version in the meantime. Alternatively you can try deleting the cache manually.</translation>
     </message>
     <message>
         <location line="+12"/>
@@ -1194,12 +1194,12 @@ You may optionally provide a reason for others to accept your knock:</translatio
     <message>
         <location line="+18"/>
         <source>You can configure when your messages will be deleted in %1. This only happens when Nheko is open and has permissions to delete messages until Matrix servers support this feature natively. In general 0 means disable.</source>
-        <translation>You can configure when your messages will be deleted in %1. This only happens when Nheko is open and has permissions to delete messages until Matrix servers support this feature natively. In general 0 means disable.</translation>
+        <translation>You can configure when your messages will be deleted in %1. This only happens when NexusSnheko is open and has permissions to delete messages until Matrix servers support this feature natively. In general 0 means disable.</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>You can configure when your messages will be deleted in all rooms unless configured otherwise. This only happens when Nheko is open and has permissions to delete messages until Matrix servers support this feature natively. In general 0 means disable.</source>
-        <translation>You can configure when your messages will be deleted in all rooms unless configured otherwise. This only happens when Nheko is open and has permissions to delete messages until Matrix servers support this feature natively. In general 0 means disable.</translation>
+        <translation>You can configure when your messages will be deleted in all rooms unless configured otherwise. This only happens when NexusSnheko is open and has permissions to delete messages until Matrix servers support this feature natively. In general 0 means disable.</translation>
     </message>
     <message>
         <location line="+15"/>
@@ -2583,7 +2583,7 @@ Example: https://yourserver.example.com:8787</translation>
     <message>
         <location filename="../../src/main.cpp" line="+220"/>
         <source>Create a unique profile which allows you to log into several accounts at the same time and start multiple instances of nheko.</source>
-        <translation>Create a unique profile which allows you to log into several accounts at the same time and start multiple instances of nheko.</translation>
+        <translation>Create a unique profile which allows you to log into several accounts at the same time and start multiple instances of NexusSnheko.</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -3603,7 +3603,7 @@ Example: https://yourserver.example.com:8787</translation>
     <message>
         <location line="+1"/>
         <source>Nheko could not connect to the secure storage to save encryption secrets to. This can have multiple reasons. Check if your D-Bus service is running and you have configured a service like KWallet, Gnome Keyring, KeePassXC or the equivalent for your platform. If you are having trouble, feel free to open an issue here: https://github.com/Nheko-Reborn/nheko/issues</source>
-        <translation>Nheko could not connect to the secure storage to save encryption secrets to. This can have multiple reasons. Check if your D-Bus service is running and you have configured a service like KWallet, Gnome Keyring, KeePassXC or the equivalent for your platform. If you are having trouble, feel free to open an issue here: https://github.com/Nheko-Reborn/nheko/issues</translation>
+        <translation>NexusSnheko could not connect to the secure storage to save encryption secrets to. This can have multiple reasons. Check if your D-Bus service is running and you have configured a service like KWallet, Gnome Keyring, KeePassXC or the equivalent for your platform. If you are having trouble, feel free to open an issue here: https://github.com/Nheko-Reborn/nheko/issues</translation>
     </message>
 </context>
 <context>
@@ -5283,7 +5283,7 @@ OFF - square, ON - circle.</translation>
     <message>
         <location line="+3"/>
         <source>Nheko uses animations in several places to make stuff pretty. This allows you to turn those off if they make you feel unwell.</source>
-        <translation>Nheko uses animations in several places to make stuff pretty. This allows you to turn those off if they make you feel unwell.</translation>
+        <translation>NexusSnheko uses animations in several places to make stuff pretty. This allows you to turn those off if they make you feel unwell.</translation>
     </message>
     <message>
         <location line="+8"/>
@@ -5330,7 +5330,7 @@ This usually causes the application icon in the task bar to animate in some fash
     <message>
         <location line="+252"/>
         <source>Set the max width of messages in the timeline (in pixels). This can help readability on wide screen when Nheko is maximized</source>
-        <translation>Set the max width of messages in the timeline (in pixels). This can help readability on wide screen when Nheko is maximized</translation>
+        <translation>Set the max width of messages in the timeline (in pixels). This can help readability on wide screen when NexusSnheko is maximized</translation>
     </message>
     <message>
         <location line="+19"/>
@@ -5643,7 +5643,7 @@ This setting will take effect upon restart.</translation>
     <message>
         <location filename="../qml/pages/WelcomePage.qml" line="+30"/>
         <source>Welcome to nheko! The desktop client for the Matrix protocol.</source>
-        <translation>Welcome to Nheko! The desktop client for the Matrix protocol.</translation>
+        <translation>Welcome to NexusSnheko! The desktop client for the Matrix protocol.</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -5668,7 +5668,7 @@ This setting will take effect upon restart.</translation>
     <message>
         <location line="+7"/>
         <source>Nheko uses animations in several places to make stuff pretty. This allows you to turn those off if they make you feel unwell.</source>
-        <translation>Nheko uses animations in several places to make stuff pretty. This allows you to turn those off if they make you feel unwell.</translation>
+        <translation>NexusSnheko uses animations in several places to make stuff pretty. This allows you to turn those off if they make you feel unwell.</translation>
     </message>
 </context>
 <context>
