@@ -155,9 +155,9 @@ createStandardDirectory(QStandardPaths::StandardLocation path)
 int
 main(int argc, char *argv[])
 {
-    QCoreApplication::setApplicationName(QStringLiteral("nheko"));
+    QCoreApplication::setApplicationName(QStringLiteral("NexusSnheko"));
     QCoreApplication::setApplicationVersion(nheko::version);
-    QCoreApplication::setOrganizationName(QStringLiteral("nheko"));
+    QCoreApplication::setOrganizationName(QStringLiteral("NexusSnheko"));
 
     // Disable the qml disk cache by default to prevent crashes on updates. See
     // https://github.com/Nheko-Reborn/nheko/issues/1383
@@ -308,7 +308,7 @@ main(int argc, char *argv[])
 #ifdef NHEKO_FLATPAK
     app.setDesktopFileName(QStringLiteral("im.nheko.Nheko"));
 #else
-    app.setDesktopFileName(QStringLiteral("nheko"));
+    app.setDesktopFileName(QStringLiteral("NexusSnheko"));
 #endif
 
     http::init();

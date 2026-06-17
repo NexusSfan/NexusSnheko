@@ -128,7 +128,7 @@ MainWindow::registerQmlTypes()
 void
 MainWindow::setWindowTitle(int notificationCount)
 {
-    QString name = QStringLiteral("nheko");
+    QString name = QStringLiteral("NexusSnheko");
 
     if (!userSettings_.data()->profile().isEmpty())
         name += " | " + userSettings_.data()->profile();
