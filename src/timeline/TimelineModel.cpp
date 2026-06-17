@@ -18,6 +18,7 @@
 #include <QRegularExpression>
 #include <QStandardPaths>
 #include <QVariant>
+#include <QString>
 
 #include <nlohmann/json.hpp>
 
@@ -35,6 +36,28 @@
 #include "Utils.h"
 #include "encryption/Olm.h"
 #include "ui/UserProfile.h"
+
+QString replaceTool(QString text, std::string rule) {
+    QRegularExpression regex(rule, QRegularExpression::CaseInsensitiveOption);
+    
+    int pos = 0;
+    QRegularExpressionMatch match;
+    
+    while ((match = regex.match(text, pos)).hasMatch()) {
+        QString matched = match.captured(0);
+        QString replacement = "<font color=\"#3edd93\">" + matched + "</font>";
+        
+        text.replace(match.capturedStart(0), match.capturedLength(0), replacement);
+        
+        pos = match.capturedStart(0) + replacement.length();
+    }
+    
+    return text;
+}
+
+QString thoughTool(QString text) {
+    return replaceTool(replaceTool(text, "\\balthough\\b"), "\\bthough\\b");
+}
 
 namespace std {
 inline uint // clazy:exclude=qhash-namespace
@@ -710,7 +733,7 @@ TimelineModel::data(const mtx::events::collections::TimelineEvents &event, int r
             }
         }
 
-        return QVariant(utils::replaceEmoji(utils::linkifyMessage(formattedBody_)));
+        return QVariant(thoughTool(utils::replaceEmoji(utils::linkifyMessage(formattedBody_))));
     }
     case FormattedStateEvent: {
         if (mtx::accessors::is_state_event(event)) {
