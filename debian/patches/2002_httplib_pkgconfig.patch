@@ -7,14 +7,14 @@ This patch header follows DEP-3: http://dep.debian.net/deps/dep3/
 --- a/CMakeLists.txt
 +++ b/CMakeLists.txt
 @@ -875,8 +875,9 @@
-     target_include_directories(nheko PRIVATE third_party/cpp-httplib-0.5.12)
-     target_sources(nheko PRIVATE third_party/cpp-httplib-0.5.12/httplib.h)
+     target_include_directories(nexussnheko PRIVATE third_party/cpp-httplib-0.5.12)
+     target_sources(nexussnheko PRIVATE third_party/cpp-httplib-0.5.12/httplib.h)
  else()
 -    find_package(httplib REQUIRED)
--    target_link_libraries(nheko PRIVATE httplib::httplib)
+-    target_link_libraries(nexussnheko PRIVATE httplib::httplib)
 +    find_package(PkgConfig REQUIRED)
 +    pkg_check_modules(httplib REQUIRED IMPORTED_TARGET cpp-httplib)
-+    target_link_libraries(nheko PRIVATE PkgConfig::httplib)
++    target_link_libraries(nexussnheko PRIVATE PkgConfig::httplib)
  endif()
  
  if(USE_BUNDLED_BLURHASH)
