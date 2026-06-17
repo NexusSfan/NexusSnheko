@@ -4,11 +4,6 @@ option(APPVEYOR_BUILD "Build on appveyor" OFF)
 option(CI_BUILD "Set when building in CI. Enables -Werror where possible" OFF)
 option(ASAN "Compile with address sanitizers" OFF)
 option(QML_DEBUGGING "Enable qml debugging" OFF)
-if(UNIX AND NOT APPLE)
-    option(MAN "Build man page" ON)
-else()
-    option(MAN "Build man page" OFF)
-endif()
 option(JSON_ImplicitConversions "Disable implicit conversions in nlohmann/json" ON)
 
 set(
@@ -837,7 +832,7 @@ set(QML_SOURCES
     resources/qml/delegates/EncryptionEnabled.qml
     resources/qml/ui/TimelineEffects.qml
 )
-qt_add_qml_module(nheko
+qt_add_qml_module(nexussnheko
     URI im.nheko
     NO_RESOURCE_TARGET_PATH
     RESOURCE_PREFIX "/"
@@ -861,7 +856,7 @@ qt_add_qml_module(nheko
 # Bundle translations
 #
 file(GLOB LANG_TS_SRC "${CMAKE_CURRENT_SOURCE_DIR}/resources/langs/*.ts")
-qt_add_translations(nheko RESOURCE_PREFIX "/translations" TS_FILES
+qt_add_translations(nexussnheko RESOURCE_PREFIX "/translations" TS_FILES
     ${LANG_TS_SRC} SOURCES ${QML_SOURCES} ${SRC_FILES})
 
 if(WIN32)
@@ -885,7 +880,7 @@ else()
 endif()
 
 if(USE_BUNDLED_BLURHASH)
-    target_include_directories(nheko PRIVATE third_party/blurhash)
+    target_include_directories(nexussnheko PRIVATE third_party/blurhash)
     set(BLURHASH_SRC_FILES
         third_party/blurhash/blurhash.cpp
         third_party/blurhash/blurhash.hpp
@@ -933,7 +928,7 @@ target_link_libraries(nexussnheko PRIVATE
     
 if(UNIX)
     # for wayland activation tokens
-    target_link_libraries(nheko PRIVATE Qt::GuiPrivate)
+    target_link_libraries(nexussnheko PRIVATE Qt::GuiPrivate)
 endif()
 
 if(${CMAKE_VERSION} VERSION_GREATER_EQUAL "3.16.0")
@@ -973,10 +968,6 @@ endif()
 #if(NOT MSVC)
 #   target_link_options(nheko PRIVATE "LINKER:,--gc-sections")
 #endif()
-
-if(MAN)
-    add_subdirectory(man)
-endif()
 
 # potential workaround for macdeployqt issues
 if(APPLE)
