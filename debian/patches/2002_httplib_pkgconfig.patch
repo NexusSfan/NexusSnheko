@@ -1,0 +1,20 @@
+Description: Use pkgconfig to find cpp-httplib
+Author: Hubert Chathi <hubert@uhoreg.ca>
+Forwarded: not-needed
+Last-Update: 2024-03-17
+---
+This patch header follows DEP-3: http://dep.debian.net/deps/dep3/
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -875,8 +875,9 @@
+     target_include_directories(nheko PRIVATE third_party/cpp-httplib-0.5.12)
+     target_sources(nheko PRIVATE third_party/cpp-httplib-0.5.12/httplib.h)
+ else()
+-    find_package(httplib REQUIRED)
+-    target_link_libraries(nheko PRIVATE httplib::httplib)
++    find_package(PkgConfig REQUIRED)
++    pkg_check_modules(httplib REQUIRED IMPORTED_TARGET cpp-httplib)
++    target_link_libraries(nheko PRIVATE PkgConfig::httplib)
+ endif()
+ 
+ if(USE_BUNDLED_BLURHASH)

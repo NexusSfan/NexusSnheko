@@ -1,0 +1,19 @@
+# Nheko for Debian
+
+Nheko by default rely on a secure secrets service,
+e.g. Gnome Keyring or KWallet Manager.
+
+In some situation,
+e.g. to reduce CPU cycles on a full-disk-encrypted system.
+you may want to disable the use of secure secret service.
+This is [unsupported but functional],
+by adding the the following configuration flag:
+
+--- BEGIN ~/.config/nheko/nheko.conf ---
+[General]
+run_without_secure_secrets_service=true
+--- END ~/.config/nheko/nheko.conf ---
+
+[unsupported but functional]: https://github.com/Nheko-Reborn/nheko/issues/1601#issuecomment-1787271316
+
+ -- Jonas Smedegaard <dr@jones.dk>  Thu, 29 Feb 2024 09:19:38 +0100

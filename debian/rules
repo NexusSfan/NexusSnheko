@@ -1,0 +1,42 @@
+#!/usr/bin/make -f
+
+export QT_SELECT=6
+
+# reduce risk of out-of-memory issues during build for weak arches
+ifneq (,$(filter $(DEB_HOST_ARCH),armel armhf mips mipsel sh4 hppa))
+DEB_CFLAGS_MAINT_STRIP = -g1
+DEB_CXXFLAGS_MAINT_STRIP = -g1
+DEB_CFLAGS_MAINT_APPEND = -g0
+DEB_CXXFLAGS_MAINT_APPEND = -g0
+DEB_CPPFLAGS_MAINT_APPEND = --param ggc-min-expand=10
+ifeq (,$(filter noopt,$(DEB_BUILD_OPTIONS)))
+DEB_CFLAGS_MAINT_STRIP += -O2
+DEB_CXXFLAGS_MAINT_STRIP += -O2
+DEB_CFLAGS_MAINT_APPEND += -Os
+DEB_CXXFLAGS_MAINT_APPEND += -Os
+endif
+endif
+
+%:
+	dh $@ --buildsystem=cmake --builddirectory=build
+
+# all done in build: build of earlier parts needed to configure later parts
+override_dh_auto_configure:
+	dh_quilt_patch
+
+override_dh_auto_build:
+	dh_auto_configure --sourcedirectory=coeurl --builddirectory=.deps/coeurl
+	dh_auto_build --sourcedirectory=coeurl --builddirectory=.deps/coeurl
+	dh_auto_configure --sourcedirectory=mtxclient --builddirectory=.deps/mtxclient -- -DBUILD_LIB_TESTS=OFF -DBUILD_SHARED_LIBS=OFF -DBUILD_LIB_EXAMPLES=OFF -Dcoeurl_DIR=$(CURDIR)/.deps/coeurl
+	dh_auto_build --sourcedirectory=mtxclient --builddirectory=.deps/mtxclient
+	dh_auto_configure -- -DCMAKE_BUILD_TYPE=RelWithDebInfo -DBUILD_LIB_EXAMPLES=OFF -DUSE_BUNDLED_CPPHTTPLIB=OFF -DLMDBXX_INCLUDE_DIR=$(CURDIR)/lmdbxx -Dcoeurl_DIR=$(CURDIR)/.deps/coeurl -DMatrixClient_DIR=$(CURDIR)/.deps/mtxclient
+	dh_auto_build
+
+override_dh_auto_test:
+	dh_auto_test --sourcedirectory=coeurl --builddirectory=.deps/coeurl
+	dh_auto_test --sourcedirectory=mtxclient --builddirectory=.deps/mtxclient
+	dh_auto_test
+
+override_dh_auto_clean:
+	dh_quilt_unpatch
+	dh_auto_clean

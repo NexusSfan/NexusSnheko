@@ -1,0 +1,67 @@
+Source: nexussnheko
+Maintainer: Matrix Packaging Team <pkg-matrix-maintainers@alioth-lists.debian.net>
+Uploaders:
+ Hubert Chathi <uhoreg@debian.org>,
+ Jonas Smedegaard <dr@jones.dk>,
+Section: net
+Build-Depends:
+ asciidoc-base,
+ cmake,
+ debhelper-compat (=13),
+ dh-exec,
+ dh-sequence-qmldeps,
+ libcmark-dev,
+ libcpp-httplib-dev,
+ libcurl4-openssl-dev,
+ libevent-dev,
+ libfmt-dev,
+ libgstreamer-plugins-bad1.0-dev,
+ libgstreamer-plugins-base1.0-dev,
+ libgstreamer1.0-dev,
+ libkdsingleapplication-qt6-dev,
+ liblmdb-dev,
+ libolm-dev,
+ libre2-dev,
+ libspdlog-dev,
+ libssl-dev,
+ libxcb-ewmh-dev,
+ nlohmann-json3-dev,
+ qt6-base-dev,
+ qt6-base-private-dev,
+ qt6-declarative-dev,
+ qt6-declarative-private-dev,
+ qt6-multimedia-dev,
+ qt6-svg-dev,
+ qt6-tools-dev,
+ qtkeychain-qt6-dev,
+Standards-Version: 4.7.3
+Vcs-Browser: https://github.com/NexusSfan/NexusSnheko/nheko
+Vcs-Git: https://github.com/NexusSfan/NexusSnheko/nheko.git
+Homepage: https://github.com/NexusSfan/NexusSnheko
+
+Package: nexussnheko
+Architecture: any
+Depends:
+ qt6-svg-plugins,
+ ${misc:Depends},
+ ${qml6:Depends},
+ ${shlibs:Depends},
+Recommends:
+ ca-certificates,
+ fonts-noto-color-emoji,
+ gnome-keyring | kwalletmanager,
+ gstreamer1.0-libcamera,
+ gstreamer1.0-nice,
+ gstreamer1.0-pipewire,
+ gstreamer1.0-plugins-bad,
+ gstreamer1.0-qt6,
+ qt6-image-formats-plugins,
+Suggests:
+ gstreamer1.0-vaapi,
+ kimageformat6-plugins,
+Description: desktop IM client for the Matrix protocol
+ NexusSnheko is a Qt-based chat client for Matrix, an open, federated communications
+ protocol.  The motivation behind the project is to provide a native desktop
+ app for Matrix that feels more like a mainstream chat app and less like an IRC
+ client.
+ NexusSnheko is a fork of nheko.

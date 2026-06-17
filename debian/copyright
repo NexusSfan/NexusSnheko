@@ -1,0 +1,385 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: nheko
+Upstream-Contact: https://github.com/NeuxsSfan/NexusSnheko/issues
+Source: https://github.com/NeuxsSfan/NexusSnheko
+ https://github.com/Nheko-Reborn/mtxclient
+ https://github.com/Nheko-Reborn/lmdbxx
+ https://nheko.im/nheko-reborn/coeurl
+ .
+ Repackaged, excluding any .git* files.
+Files-Excluded:
+ */.git*
+Files-Excluded-coeurl:
+ */.git*
+Files-Excluded-lmdbxx:
+ */.git*
+Files-Excluded-mtxclient:
+ */.git*
+
+Files: *
+Copyright:
+  2017       Christian Mollekopf, <mollekopf@kolabsystems.com>
+  2010       David Sansome <me@davidsansome.com>
+  2016       Michael Bohlender, <michael.bohlender@kdemail.net>
+  2021       Mirian Margiani
+  2021-2024  Nheko Contributors
+             Nheko Reborn developers
+  2019       The nheko authors
+License: GPL-3+
+Reference:
+ nheko/COPYING
+ resources/nheko.appdata.xml.in
+
+Files: mtxclient/*
+Copyright:
+  2018  Konstantinos Sideris <sideris.konstantin@gmail.com>
+License: Expat
+Reference:
+ mtxclient/LICENSE
+ mtxclient/meson.build
+
+Files: coeurl/*
+Copyright:
+  2021  Nicolas Werner <nicolas.werner@hotmail.de>
+License: Expat
+Reference:
+ coeurl/LICENSE
+ coeurl/meson.build
+
+Files: lmdbxx/*
+Copyright:
+  Arto Bendiken <arto@bendiken.net>
+  Doug Hoyte <doug@hoytech.com>
+License-Grant:
+ This is free and unencumbered public domain software.
+ For more information,
+ see <http://unlicense.org/> or the accompanying <UNLICENSE> file.
+License: Unlicense
+Reference:
+ lmdbxx/AUTHORS
+ lmdbxx/README.md
+ lmdbxx/UNLICENSE
+
+Files: third_party/blurhash/*
+Copyright:
+  Nicolas Werner <nicolas.werner@hotmail.de>
+License: Boost-1.0
+Comment:
+ Source contains no copyright statements.
+ Copyright assumed from git commit metadata,
+ for both this project and upstream project
+ at <https://github.com/Nheko-Reborn/blurhash>.
+Reference:
+ third_party/blurhash/LICENSE
+
+Files: third_party/cpp-httplib-0.5.12/*
+Copyright:
+  2020  Yuji Hirose
+License: Expat
+
+Files:
+ cmake/HunterGate.cmake
+ coeurl/cmake/HunterGate.cmake
+ mtxclient/cmake/HunterGate.cmake
+Copyright:
+  2013-2019  Ruslan Baratov
+License: BSD-2-clause
+
+Files:
+ mtxclient/cmake/CodeCoverage.cmake
+Copyright:
+  2012-2015  Lars Bilke
+License: BSD-3-clause
+
+Files:
+ scripts/includemocs.py
+Copyright:
+  2022  Klarälvdalens Datakonsult AB, a KDAB Group company
+ <info@kdab.com>
+License: Expat
+
+Files:
+ lmdbxx/etc/portage/dev-db/lmdb++/lmdb++-0.9.14.0.ebuild
+Copyright:
+  1999-2015  Gentoo Foundation
+License-Grant:
+ Distributed under the terms of the GNU General Public License v2
+License: GPL-2
+
+Files:
+ src/notifications/ManagerLinux.cpp
+Copyright:
+  2012  Roland Hieber <rohieb@rohieb.name>
+        Nheko Contributors
+License-Grant:
+ Licensed under the GNU General Public License, version 3
+License: GPL-3 and GPL-3+
+
+Files:
+ scripts/flat-manager-client
+Copyright:
+  Nicolas Werner <nicolas.werner@hotmail.de>
+License-Grant:
+ This program is free software;
+ you can redistribute it and/or modify it
+ under the terms of the GNU General Public License
+ as published by the Free Software Foundation;
+ either version 2 of the License, or (at your option) any later version.
+License: GPL-2+
+Comment:
+ Source contains no copyright statements.
+ Copyright assumed from git commit metadata.
+
+Files:
+ resources/emoji-test.txt
+Copyright:
+  2022-2023  Unicode®, Inc.
+License-Grant:
+ For terms of use, see https://www.unicode.org/terms_of_use.html
+License: Unicode-3.0
+
+Files: resources/nheko.appdata.xml.in
+Copyright:
+  2020-2022  mujx
+  2020-2022  Nheko Reborn developers
+License: CC0-1.0
+
+Files: debian/*
+Copyright:
+  2017       Hubert Chathi <uhoreg@debian.org>
+  2020-2026  Jonas Smedegaard <dr@jones.dk>
+  2020-2021  Purism, SPC
+License-Grant:
+ This program is free software:
+ you can redistribute it and/or modify it
+ under the terms of the GNU General Public License
+ as published by the Free Software Foundation,
+ either version 3 of the License,
+ or (at your option) any later version.
+License: GPL-3+
+Reference: debian/copyright
+
+Files:
+ debian/patches/*
+Copyright:
+  Heiko Becker <mail@heiko-becker.de>
+  Hubert Chathi <hubert@uhoreg.ca>
+  Jonas Smedegaard <dr@jones.dk>
+  Nicolas Werner <nicolas.werner@hotmail.de>
+  Pablo Barciela
+  Sofia/Nep <nepnep91@protonmail.com>
+License: GPL-3+
+Reference:
+ nheko/COPYING
+ resources/nheko.appdata.xml.in
+Comment:
+ Patches commonly lack explicit copyright and license.
+ For the cases where patches are copyrightable at all,
+ copyright is assumed to be held by the author,
+ and license is assumed to be the same as main upstream license.
+
+License: Boost-1.0
+ Boost Software License - Version 1.0 - August 17th, 2003
+ .
+ Permission is hereby granted, free of charge, to any person or organization
+ obtaining a copy of the software and accompanying documentation covered by
+ this license (the "Software") to use, reproduce, display, distribute,
+ execute, and transmit the Software, and to prepare derivative works of the
+ Software, and to permit third-parties to whom the Software is furnished to
+ do so, all subject to the following:
+ .
+ The copyright notices in the Software and this entire statement, including
+ the above license grant, this restriction and the following disclaimer,
+ must be included in all copies of the Software, in whole or in part, and
+ all derivative works of the Software, unless such copies or derivative
+ works are solely in the form of machine-executable object code generated by
+ a source language processor.
+ .
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE, TITLE AND NON-INFRINGEMENT. IN NO EVENT
+ SHALL THE COPYRIGHT HOLDERS OR ANYONE DISTRIBUTING THE SOFTWARE BE LIABLE
+ FOR ANY DAMAGES OR OTHER LIABILITY, WHETHER IN CONTRACT, TORT OR OTHERWISE,
+ ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+ DEALINGS IN THE SOFTWARE.
+
+License: BSD-2-clause
+ Redistribution and use in source and binary forms,
+ with or without modification,
+ are permitted
+ provided that the following conditions are met:
+   * Redistributions of source code must retain
+     the above copyright notice, this list of conditions
+     and the following disclaimer.
+   * Redistributions in binary form must reproduce
+     the above copyright notice, this list of conditions
+     and the following disclaimer
+     in the documentation and/or other materials
+     provided with the distribution.
+ .
+ THIS SOFTWARE IS PROVIDED
+ BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+ AND ANY EXPRESS OR IMPLIED WARRANTIES,
+ INCLUDING, BUT NOT LIMITED TO,
+ THE IMPLIED WARRANTIES OF MERCHANTABILITY
+ AND FITNESS FOR A PARTICULAR PURPOSE
+ ARE DISCLAIMED.
+ IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+ FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+ EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+ (INCLUDING, BUT NOT LIMITED TO,
+ PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+ LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+ HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ (INCLUDING NEGLIGENCE OR OTHERWISE)
+ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE,
+ EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+License: BSD-3-clause
+ Redistribution and use in source and binary forms,
+ with or without modification,
+ are permitted
+ provided that the following conditions are met:
+  1. Redistributions of source code must retain
+     the above copyright notice, thislist of conditions
+     and the following disclaimer.
+  2. Redistributions in binary form must reproduce
+     the above copyright notice, this list of conditions
+     and the following disclaimer
+     in the documentation and/or other materials
+     provided with the distribution.
+  3. Neither the name of the copyright holder
+     nor the names of its contributors
+     may be used to endorse or promote
+     products derived from this software
+     without specific prior written permission.
+ .
+ THIS SOFTWARE IS PROVIDED
+ BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+ AND ANY EXPRESS OR IMPLIED WARRANTIES,
+ INCLUDING, BUT NOT LIMITED TO,
+ THE IMPLIED WARRANTIES OF MERCHANTABILITY
+ AND FITNESS FOR A PARTICULAR PURPOSE
+ ARE DISCLAIMED.
+ IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+ FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+ EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+ (INCLUDING, BUT NOT LIMITED TO,
+ PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+ LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+ HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ (INCLUDING NEGLIGENCE OR OTHERWISE)
+ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE,
+ EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+License: CC0-1.0
+Reference: /usr/share/common-licenses/CC0-1.0
+
+License: Expat
+ Permission is hereby granted, free of charge, to any person obtaining a copy
+ of this software and associated documentation files (the "Software"), to deal
+ in the Software without restriction, including without limitation the rights
+ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ copies of the Software, and to permit persons to whom the Software is
+ furnished to do so, subject to the following conditions:
+ .
+ The above copyright notice and this permission notice shall be included in all
+ copies or substantial portions of the Software.
+ .
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ SOFTWARE.
+
+License: GPL-2
+Reference: /usr/share/common-licenses/GPL-2
+
+License: GPL-2+
+Reference: /usr/share/common-licenses/GPL-2
+
+License: GPL-3
+Reference: /usr/share/common-licenses/GPL-3
+
+License: GPL-3+
+Reference: /usr/share/common-licenses/GPL-3
+
+License: Unicode-3.0
+ NOTICE TO USER:
+ Carefully read the following legal agreement.
+ BY DOWNLOADING, INSTALLING, COPYING
+ OR OTHERWISE USING DATA FILES, AND/OR SOFTWARE,
+ YOU UNEQUIVOCALLY ACCEPT, AND AGREE TO BE BOUND BY,
+ ALL OF THE TERMS AND CONDITIONS OF THIS AGREEMENT.
+ IF YOU DO NOT AGREE,
+ DO NOT DOWNLOAD, INSTALL, COPY, DISTRIBUTE OR USE
+ THE DATA FILES OR SOFTWARE.
+ .
+ Permission is hereby granted, free of charge,
+ to any person obtaining a copy
+ of data files and any associated documentation (the "Data Files")
+ or software and any associated documentation (the "Software")
+ to deal in the Data Files or Software without restriction,
+ including without limitation
+ the rights to use, copy, modify, merge, publish, distribute, and/or sell
+ copies of the Data Files or Software,
+ and to permit persons
+ to whom the Data Files or Software are furnished
+ to do so,
+ provided that either (a) this copyright and permission notice appear
+ with all copies of the Data Files or Software,
+ or (b) this copyright and permission notice appear
+ in associated Documentation.
+ .
+ THE DATA FILES AND SOFTWARE ARE PROVIDED "AS IS",
+ WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
+ INCLUDING BUT NOT LIMITED TO
+ THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE
+ AND NONINFRINGEMENT OF THIRD PARTY RIGHTS.
+ .
+ IN NO EVENT SHALL THE COPYRIGHT HOLDER OR HOLDERS
+ INCLUDED IN THIS NOTICE
+ BE LIABLE FOR ANY CLAIM,
+ OR ANY SPECIAL INDIRECT OR CONSEQUENTIAL DAMAGES,
+ OR ANY DAMAGES WHATSOEVER
+ RESULTING FROM LOSS OF USE, DATA OR PROFITS,
+ WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION,
+ ARISING OUT OF OR IN CONNECTION WITH
+ THE USE OR PERFORMANCE OF THE DATA FILES OR SOFTWARE.
+ .
+ Except as contained in this notice,
+ the name of a copyright holder shall not be used
+ in advertising or otherwise
+ to promote the sale, use or other dealings
+ in these Data Files or Software
+ without prior written authorization of the copyright holder.
+
+License: Unlicense
+ This is free and unencumbered software released into the public domain.
+ .
+ Anyone is free to copy, modify, publish, use, compile, sell, or
+ distribute this software, either in source code form or as a compiled
+ binary, for any purpose, commercial or non-commercial, and by any
+ means.
+ .
+ In jurisdictions that recognize copyright laws, the author or authors
+ of this software dedicate any and all copyright interest in the
+ software to the public domain. We make this dedication for the benefit
+ of the public at large and to the detriment of our heirs and
+ successors. We intend this dedication to be an overt act of
+ relinquishment in perpetuity of all present and future rights to this
+ software under copyright law.
+ .
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+ EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+ MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+ IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR
+ OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
+ ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+ OTHER DEALINGS IN THE SOFTWARE.
+ .
+ For more information, please refer to <http://unlicense.org/>
