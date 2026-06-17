@@ -37,8 +37,8 @@
 #include "encryption/Olm.h"
 #include "ui/UserProfile.h"
 
-QString replaceTool(QString text, std::string rule) {
-    QRegularExpression regex(rule, QRegularExpression::CaseInsensitiveOption);
+QString thoughTool(QString text) {
+    QRegularExpression regex("\\bthough\\b|\\balthough\\b", QRegularExpression::CaseInsensitiveOption);
     
     int pos = 0;
     QRegularExpressionMatch match;
@@ -53,10 +53,6 @@ QString replaceTool(QString text, std::string rule) {
     }
     
     return text;
-}
-
-QString thoughTool(QString text) {
-    return replaceTool(replaceTool(text, "\\balthough\\b"), "\\bthough\\b");
 }
 
 namespace std {
