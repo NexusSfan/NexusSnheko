@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Copyright 2020-2022 mujx, nheko reborn developers -->
 <component type="desktop">
-  <id>im.nheko.Nheko</id>
+  <id>cz.nexussfan.Nheko</id>
   <launchable type="desktop-id">@APPID@.desktop</launchable>
   <replaces>
     <id>io.github.NhekoReborn.Nheko</id>
@@ -11,7 +11,7 @@
   <developer id="im.nheko">
     <name>Nheko Reborn</name>
   </developer>
-  <name>nheko</name>
+  <name>NexusSnheko</name>
   <summary>Desktop client for the Matrix protocol</summary>
   <description>
     <p>The motivation behind the project is to provide a native

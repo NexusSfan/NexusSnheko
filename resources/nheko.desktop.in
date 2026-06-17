@@ -1,5 +1,5 @@
 [Desktop Entry]
-Name=nheko
+Name=NexusSnheko
 Version=1.0
 Comment=Desktop client for Matrix
 Exec=@APPID@ %u
