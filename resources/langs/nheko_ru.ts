@@ -1353,7 +1353,7 @@ You may optionally provide a reason for others to accept your knock:</source>
         <location filename="../../src/ui/HiddenEvents.cpp" line="+92"/>
         <location line="+10"/>
         <source>Failed to set hidden events: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Не удалось установить скрытые события: %1</translation>
     </message>
 </context>
 <context>
@@ -1361,12 +1361,12 @@ You may optionally provide a reason for others to accept your knock:</source>
     <message>
         <location filename="../qml/dialogs/HiddenEventsDialog.qml" line="+33"/>
         <source>Hidden events for %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Скрытые события для %1</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Hidden events</source>
-        <translation type="unfinished"></translation>
+        <translation>Скрытые события</translation>
     </message>
     <message>
         <location line="+18"/>
@@ -2427,7 +2427,7 @@ Example: https://yourserver.example.com:8787</source>
     <message>
         <location line="+2"/>
         <source>Deprecated aliases events</source>
-        <translation type="unfinished"></translation>
+        <translation>События устаревших псевдонимов</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -2688,7 +2688,7 @@ Example: https://yourserver.example.com:8787</source>
     <message>
         <location filename="../../src/RegisterPage.cpp" line="+83"/>
         <source>Autodiscovery failed. Received malformed response.</source>
-        <translation type="unfinished">Автообнaружение не удалось. Получен повреждённый ответ.</translation>
+        <translation>Автообнaружение не удалось. Получен повреждённый ответ.</translation>
     </message>
     <message>
         <location line="+7"/>
@@ -4061,7 +4061,7 @@ If you choose verify, you need to have the other device available. If you choose
     <message>
         <location line="+4"/>
         <source>%1 can now send state events.</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 теперь может отправлять события состояния.</translation>
     </message>
     <message>
         <location line="+14"/>
@@ -4791,17 +4791,17 @@ Reason: %4</source>
     <message>
         <location filename="../../src/UserSettingsPage.cpp" line="+1048"/>
         <source>Theme</source>
-        <translation type="unfinished">Тема</translation>
+        <translation>Тема</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>Scale factor</source>
-        <translation type="unfinished">Масштаб</translation>
+        <translation>Масштаб</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>Highlight message on hover</source>
-        <translation type="unfinished">Подсвечивать сообщение на панели</translation>
+        <translation>Подсвечивать сообщение при наведении</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -4966,7 +4966,7 @@ Reason: %4</source>
     <message>
         <location line="+2"/>
         <source>Touchscreen mode</source>
-        <translation type="unfinished">Сенсорный режим</translation>
+        <translation>Режим сенсорного экрана</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -4976,7 +4976,7 @@ Reason: %4</source>
     <message>
         <location line="+2"/>
         <source>Font size</source>
-        <translation type="unfinished">Размер шрифта</translation>
+        <translation>Размер шрифта</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -4996,12 +4996,12 @@ Reason: %4</source>
     <message>
         <location line="+2"/>
         <source>Microphone</source>
-        <translation type="unfinished">Микрофон</translation>
+        <translation>Микрофон</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>Camera</source>
-        <translation type="unfinished">Камера</translation>
+        <translation>Камера</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -5026,7 +5026,7 @@ Reason: %4</source>
     <message>
         <location line="+2"/>
         <source>Share keys with verified users and devices</source>
-        <translation type="unfinished">Делиться ключами с проверенными участниками и устройствами</translation>
+        <translation>Делиться ключами с верифицированными пользователями и устройствами</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -5056,7 +5056,7 @@ Reason: %4</source>
     <message>
         <location line="+2"/>
         <source>Device Fingerprint</source>
-        <translation type="unfinished">Отпечаток устройства</translation>
+        <translation>Отпечаток устройства</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -5076,7 +5076,7 @@ Reason: %4</source>
     <message>
         <location line="+2"/>
         <source>GENERAL</source>
-        <translation type="unfinished">ГЛАВНОЕ</translation>
+        <translation>ГЛАВНОЕ</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -5111,12 +5111,12 @@ Reason: %4</source>
     <message>
         <location line="+2"/>
         <source>CALLS</source>
-        <translation type="unfinished">ЗВОНКИ</translation>
+        <translation>ЗВОНКИ</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>ENCRYPTION</source>
-        <translation type="unfinished">ШИФРОВАНИЕ</translation>
+        <translation>ШИФРОВАНИЕ</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -5298,7 +5298,7 @@ Warning: If your homeserver does not support this, your rooms will never be mark
     <message>
         <location line="+4"/>
         <source>Configure whether to show or hide certain events like room joins.</source>
-        <translation type="unfinished"></translation>
+        <translation>Настройте отображение или скрытие определенных событий, таких как присоединение к комнате.</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -5449,7 +5449,7 @@ This setting will take effect upon restart.</source>
     <message>
         <location line="+4"/>
         <source>Manage your ignored users.</source>
-        <translation type="unfinished"></translation>
+        <translation>Управляйте пользователями, которых вы игнорируете.</translation>
     </message>
     <message>
         <location line="+142"/>
@@ -5464,7 +5464,7 @@ This setting will take effect upon restart.</source>
     <message>
         <location line="+1"/>
         <source>Never</source>
-        <translation type="unfinished"></translation>
+        <translation>Никогда</translation>
     </message>
     <message>
         <location line="+4"/>
@@ -5504,7 +5504,7 @@ This setting will take effect upon restart.</source>
     <message>
         <location line="+103"/>
         <source>Open Sessions File</source>
-        <translation type="unfinished">Открыть файл сеансов</translation>
+        <translation>Открыть файл сеансов</translation>
     </message>
     <message>
         <location line="+4"/>
@@ -5515,7 +5515,7 @@ This setting will take effect upon restart.</source>
         <location line="+11"/>
         <location line="+18"/>
         <source>Error</source>
-        <translation type="unfinished">Ошибка</translation>
+        <translation>Ошибка</translation>
     </message>
     <message>
         <location line="-78"/>
@@ -5532,7 +5532,7 @@ This setting will take effect upon restart.</source>
         <location line="+8"/>
         <location line="+26"/>
         <source>The password cannot be empty</source>
-        <translation type="unfinished">Пароль не может быть пустым</translation>
+        <translation>Пароль не может быть пустым</translation>
     </message>
     <message>
         <location line="-8"/>
@@ -5552,12 +5552,12 @@ This setting will take effect upon restart.</source>
     <message>
         <location line="+8"/>
         <source>Passwords don&apos;t match</source>
-        <translation type="unfinished"></translation>
+        <translation>Пароли не совпадают</translation>
     </message>
     <message>
         <location line="+7"/>
         <source>File to save the exported session keys</source>
-        <translation type="unfinished">Файл для сохранения экспортированных ключей сеанса</translation>
+        <translation>Файл для сохранения экспортированных ключей сеанса</translation>
     </message>
 </context>
 <context>
