@@ -7,7 +7,7 @@ Section: net
 Build-Depends:
  asciidoc-base,
  cmake,
- debhelper-compat (=13),
+ debhelper-compat (= 12),
  dh-exec,
  dh-sequence-qmldeps,
  libcmark-dev,
