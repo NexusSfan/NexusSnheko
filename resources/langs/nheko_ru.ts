@@ -2353,7 +2353,7 @@ Example: https://yourserver.example.com:8787</source>
     <message>
         <location filename="../../src/PowerlevelsEditModels.cpp" line="+788"/>
         <source>Failed to update powerlevel: %1</source>
-        <translation type="unfinished">Не удалось обновить уровень доступа: %1</translation>
+        <translation>Не удалось обновить уровень доступа: %1</translation>
     </message>
 </context>
 <context>
@@ -2532,7 +2532,7 @@ Example: https://yourserver.example.com:8787</source>
     <message>
         <location line="+3"/>
         <source>Edit child communities and rooms</source>
-        <translation type="unfinished"></translation>
+        <translation>Редактировать дочерние сообщества и комнаты</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -2626,7 +2626,7 @@ Example: https://yourserver.example.com:8787</source>
     <message>
         <location line="+5"/>
         <source>level</source>
-        <translation type="unfinished"></translation>
+        <translation>уровень</translation>
     </message>
     <message>
         <location line="+4"/>
@@ -2636,7 +2636,7 @@ Example: https://yourserver.example.com:8787</source>
     <message>
         <location line="+2"/>
         <source>type</source>
-        <translation type="unfinished"></translation>
+        <translation>тип</translation>
     </message>
     <message>
         <location line="+4"/>
