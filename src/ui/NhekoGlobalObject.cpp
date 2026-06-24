@@ -156,7 +156,9 @@ Nheko::createRoom(bool space,
                   const QString &name,
                   const QString &topic,
                   const QString &aliasLocalpart,
+                  const QString &roomVersion,
                   bool isEncrypted,
+                  bool isFederated,
                   int preset)
 {
     mtx::requests::CreateRoom req;
@@ -164,7 +166,6 @@ Nheko::createRoom(bool space,
     if (space) {
         req.creation_content       = mtx::events::state::Create{};
         req.creation_content->type = mtx::events::state::room_type::space;
-        req.creation_content->room_version.clear();
     }
 
     switch (preset) {
@@ -182,6 +183,12 @@ Nheko::createRoom(bool space,
     req.name            = name.toStdString();
     req.topic           = topic.toStdString();
     req.room_alias_name = aliasLocalpart.toStdString();
+    if (!space) {
+        req.creation_content       = mtx::events::state::Create{};
+    }
+    req.creation_content->room_version = roomVersion.toStdString();
+    req.room_version                   = roomVersion.toStdString();
+    req.creation_content->federate     = isFederated;
 
     if (isEncrypted) {
         mtx::events::StrippedEvent<mtx::events::state::Encryption> enc;

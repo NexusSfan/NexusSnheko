@@ -82,6 +82,38 @@ ApplicationWindow {
                 color: palette.text
             }
         }
+        RowLayout {
+            Layout.columnSpan: 2
+            Layout.fillWidth: true
+            Label {
+                Layout.preferredWidth: implicitWidth
+                text: "Version"
+                color: palette.text
+            }
+            MatrixTextField {
+                id: roomVersion
+                text: "10"
+                focus: true
+            }
+        }
+        Label {
+            Layout.preferredWidth: implicitWidth
+            Layout.alignment: Qt.AlignLeft
+            text: "Federated"
+            color: palette.text
+            HoverHandler {
+                id: federatedHover
+            }
+            ToolTip.visible: federatedHover.hovered
+            ToolTip.text: "Federated rooms can be joined from outside your homeserver; non-federated rooms are only available inside your homeserver."
+            ToolTip.delay: Nheko.tooltipDelay
+        }
+        ToggleButton {
+            Layout.alignment: Qt.AlignRight
+            Layout.preferredWidth: implicitWidth
+            id: isFederated
+            checked: true
+        }
         Label {
             Layout.preferredWidth: implicitWidth
             Layout.alignment: Qt.AlignLeft
@@ -160,7 +192,7 @@ ApplicationWindow {
             else {
                 preset = isTrusted.checked ? 2 : 0;
             }
-            Nheko.createRoom(space, newRoomName.text, newRoomTopic.text, newRoomAlias.text, isEncrypted.checked, preset)
+            Nheko.createRoom(space, newRoomName.text, newRoomTopic.text, newRoomAlias.text, roomVersion.text, isEncrypted.checked, isFederated.checked, preset)
             createRoomRoot.close();
         }
     }

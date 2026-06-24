@@ -66,7 +66,9 @@ public:
                                 const QString &name,
                                 const QString &topic,
                                 const QString &aliasLocalpart,
+                                const QString &roomVersion,
                                 bool isEncrypted,
+                                bool isFederated,
                                 int preset);
     Q_INVOKABLE PowerlevelEditingModels *editPowerlevels(QString room_id_) const
     {
