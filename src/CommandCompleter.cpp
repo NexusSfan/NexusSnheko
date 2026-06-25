@@ -85,6 +85,8 @@ CommandCompleter::data(const QModelIndex &index, int role) const
                 return QStringLiteral("/rainbownotice ");
             case Confetti:
                 return QStringLiteral("/confetti ");
+            case BanText:
+                return QStringLiteral("/bantext ");
             case RainbowConfetti:
                 return QStringLiteral("/rainbowconfetti ");
             case Rainfall:
@@ -170,6 +172,8 @@ CommandCompleter::data(const QModelIndex &index, int role) const
                 return tr("/rainbownotice <message>");
             case Confetti:
                 return tr("/confetti [message]");
+            case BanText:
+                return QStringLiteral("/bantext [message]");
             case RainbowConfetti:
                 return tr("/rainbowconfetti [message]");
             case Rainfall:
@@ -259,6 +263,8 @@ CommandCompleter::data(const QModelIndex &index, int role) const
                 return tr("Send a bot message in rainbow colors.");
             case Confetti:
                 return tr("Send a message with confetti.");
+            case BanText:
+                return QStringLiteral("Makes text bright red as it appears on imageboards when a user is banned for a particular post.");
             case RainbowConfetti:
                 return tr("Send a message in rainbow colors with confetti.");
             case Rainfall:

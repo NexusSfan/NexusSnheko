@@ -277,6 +277,7 @@ InputBar::updateTextContentProperties(const QString &t, bool charDeleted)
                                              QStringLiteral("rainbownotice"),
                                              QStringLiteral("confetti"),
                                              QStringLiteral("rainbowconfetti"),
+                                             QStringLiteral("bantext"),
                                              QStringLiteral("rainfall"),
                                              QStringLiteral("msgtype"),
                                              QStringLiteral("glitch"),
@@ -993,6 +994,8 @@ InputBar::command(const QString &command, QString args)
         confetti(args, false);
     } else if (command == QLatin1String("rainbowconfetti")) {
         confetti(args, true);
+    } else if (command == QLatin1String("bantext")) {
+        message("<strong style=\"color: red\">" + (args.isEmpty() ? QLatin1String("(USER WAS BANNED FOR THIS POST)") : " " + args) + "</strong>");
     } else if (command == QLatin1String("rainfall")) {
         rainfall(args);
     } else if (command == QLatin1String("msgtype")) {

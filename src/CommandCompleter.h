@@ -46,6 +46,7 @@ public:
         RainbowNotice,
         Confetti,
         RainbowConfetti,
+        BanText,
         Rainfall,
         Msgtype,
         Glitch,
